@@ -6,6 +6,8 @@ Based on [oranda-css](https://github.com/axodotdev/oranda/tree/main/oranda-css),
 
 Ideally this will be generated for you by our tools, but for now here's an isolated demo where it can be tested.
 
+The licensing of mdbook [is MPL 2.0](https://github.com/rust-lang/mdBook/blob/master/LICENSE), so presumably the base theme we're modifying is also under that license. Our modifications will probably also be under that license for simplicity, or the usual dual MIT/Apache if that's allowed (gotta double-check how that works...).
+
 
 # Usage
 
