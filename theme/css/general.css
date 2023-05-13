@@ -8,7 +8,7 @@
 }
 
 html {
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--main-font, "Open Sans"), sans-serif;
     color: var(--fg);
     background-color: var(--bg);
     text-size-adjust: none;
@@ -39,6 +39,10 @@ main {
 /* Don't change font size in headers. */
 h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
     font-size: unset;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-fg);
 }
 
 .left { float: left; }
@@ -105,7 +109,7 @@ h6:target::before {
 .content img, .content video { max-width: 100%; }
 .content .header:link,
 .content .header:visited {
-    color: var(--fg);
+    color: var(--title-fg, var(--fg));
 }
 .content .header:link,
 .content .header:visited:hover {

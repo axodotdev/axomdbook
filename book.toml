@@ -4,3 +4,8 @@ language = "en"
 multilingual = false
 src = "src"
 title = "axomdbook"
+
+[output.html]
+default-theme = "axo"
+preferred-dark-theme = "axo"
+preferred-light-theme = "axo-light"

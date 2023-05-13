@@ -316,7 +316,7 @@ function playground_text(playground, hidden = true) {
 
     function get_theme() {
         var theme;
-        try { theme = localStorage.getItem('mdbook-theme'); } catch (e) { }
+        try { theme = localStorage.getItem('axomdbook-theme'); } catch (e) { }
         if (theme === null || theme === undefined) {
             return default_theme;
         } else {
@@ -327,7 +327,7 @@ function playground_text(playground, hidden = true) {
     function set_theme(theme, store = true) {
         let ace_theme;
 
-        if (theme == 'coal' || theme == 'navy') {
+        if (theme == 'coal' || theme == 'navy' || theme == "axo") {
             stylesheets.ayuHighlight.disabled = true;
             stylesheets.tomorrowNight.disabled = false;
             stylesheets.highlight.disabled = true;
@@ -358,7 +358,7 @@ function playground_text(playground, hidden = true) {
         var previousTheme = get_theme();
 
         if (store) {
-            try { localStorage.setItem('mdbook-theme', theme); } catch (e) { }
+            try { localStorage.setItem('axomdbook-theme', theme); } catch (e) { }
         }
 
         html.classList.remove(previousTheme);
